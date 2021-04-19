@@ -1,9 +1,61 @@
 
-.parallax{
+body, html{
+    height: 100%;
+}
+
+.parallax1{
     background-image: url("/assets/img/taça1.jpeg");
     
 
-    min-height: fit-content;
+    height: 100%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2{
+    background-image: url("/assets/img/brasileiro2004.jpg");
+    
+
+    height: 100%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax3{
+    background-image: url("/assets/img/thestrongest.jpeg");
+    
+
+    height: 100%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax4{
+    background-image: url("/assets/img/amoroso_spfcxriver.jpg");
+    
+
+    height: 100%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax5{
+    background-image: url("/assets/img/saopaulo_atletico_2005.jpg");
+    
+
+    height: 100%;
 
     background-attachment: fixed;
     background-position: center;
@@ -12,9 +64,15 @@
 }
 
 
+
 /*Estilos para index*/
 
-h1,h2,.center{
+h1,h2{
+    text-align: center;
+    background-color: white;
+}
+
+.center{
     text-align: center;
 }
 
@@ -34,12 +92,12 @@ h1,h2,.center{
 }
 
 #menu-principal li a:hover{
-    color: gray;
+    color: rgb(107, 60, 168);
 }
 
 .container{
     display: flex;
-    background-color: gray;
+    background-color: white;
     opacity: 1;
     flex-direction: row;
     flex-flow: row;

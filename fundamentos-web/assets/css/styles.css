@@ -1,0 +1,97 @@
+
+.parallax{
+    background-image: url("/assets/img/taça1.jpeg");
+    
+
+    min-height: fit-content;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*Estilos para index*/
+
+h1,h2,.center{
+    text-align: center;
+}
+
+.justify{
+    text-align: justify;
+}
+
+#menu-principal li{
+    display: inline;
+    padding: 20px;
+}
+
+#menu-principal li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+#menu-principal li a:hover{
+    color: gray;
+}
+
+.container{
+    display: flex;
+    background-color: gray;
+    opacity: 1;
+    flex-direction: row;
+    flex-flow: row;
+    text-align: justify;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.p-30{
+    padding: 30px;
+}
+
+.wh-quadrado{
+    width: 300px;
+    height: 300px;
+}
+
+.wh-retangular{
+    width: 600px;
+    height: 300px;
+}
+
+.br-15{
+    border-radius: 15%;
+}
+
+
+/*Estilos para contato.html*/
+
+#menu-contato li{
+    display: inline;
+    text-align: center;
+    padding: 20px;
+}
+
+#menu-contato li a{
+    text-decoration: none;
+}
+
+.container2{
+    display: flex;
+    flex-flow: row;
+    flex-direction: row;
+    text-align: end;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.img-link{
+    opacity: 0.5;
+}
+
+.img-link:hover{
+    opacity: 1;
+}

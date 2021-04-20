@@ -169,15 +169,6 @@ h1,h2{
 
 /*Estilos para contato.html*/
 
-#menu-contato li{
-    
-    text-align: center;
-    padding: 20px;
-}
-
-#menu-contato li a{
-    text-decoration: none;
-}
 
 .container2{
     display: flex;
@@ -187,7 +178,7 @@ h1,h2{
     flex-direction: row;
     text-align: end;
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .img-link{

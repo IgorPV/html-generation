@@ -1,6 +1,7 @@
 
 body, html{
     height: 100%;
+    background-color: #111;
 }
 
 .parallax1{
@@ -69,7 +70,8 @@ body, html{
 
 h1,h2{
     text-align: center;
-    background-color: white;
+    background-color:#111;
+    color: white;
 }
 
 .center{
@@ -80,24 +82,56 @@ h1,h2{
     text-align: justify;
 }
 
-#menu-principal li{
-    display: inline;
-    padding: 20px;
+.botao-menu{
+    cursor: pointer;
+    font-size: 30px;
+    color: #818181;
 }
 
-#menu-principal li a{
+.botao-menu:hover{
+    color: white;
+}
+
+.navegar-lateral{
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: rgb(53, 52, 52); 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+}
+
+.navegar-lateral a{
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 20px;
-    color: black;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
 }
 
-#menu-principal li a:hover{
-    color: rgb(107, 60, 168);
+.navegar-lateral a:hover{
+    color: #f1f1f1;
 }
+
+.navegar-lateral .fechar-btn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
 
 .container{
     display: flex;
-    background-color: white;
+    background-color: #111;
+    color: white;
     opacity: 1;
     flex-direction: row;
     flex-flow: row;
@@ -124,6 +158,9 @@ h1,h2{
     border-radius: 15%;
 }
 
+.branco{
+    color: white;
+}
 
 /*Estilos para contato.html*/
 
@@ -140,6 +177,8 @@ h1,h2{
 .container2{
     display: flex;
     flex-flow: row;
+    background-color: #111;
+    color: white;
     flex-direction: row;
     text-align: end;
     align-items: flex-start;

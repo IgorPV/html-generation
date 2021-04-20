@@ -7,21 +7,23 @@
     <title>Libertadores 2005 - Contato</title>
 </head>
 <body>
-    <ul id="menu-principal">
-        <li>
-            <a href="index.html">Home</a>
-        </li>
-        <li>
-            <a href="contato.html">Contato</a>
-        </li>
-    </ul>
+    <div id="menu-principal" class="navegar-lateral">
+        <a href="javascript:void(0)" class="fechar-btn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="contato.html">Contato</a>
+    </div>
+
+    <span class="botao-menu" onclick="openNav()">&#9776;Menu</span>
+
     <h1>Sobre mim</h1>
 
-    <p class="center">
-        Olá, me chamo Igor. Tenho 27 anos e estou me tornando Desenvolvedor Full Stack (no momento que estou escrevendo ainda estou estudando).
+        <p class="center branco">
+            Olá, me chamo Igor. Tenho 27 anos e estou me tornando Desenvolvedor Full Stack (no momento que estou escrevendo ainda estou estudando).
 
-    </p>
-    <p class="center">Meu objetivo com este site é aprender o básico de estruturas em html, para então avançar meus conhecimentos no desenvolvimento front end.</p>
+        </p>
+        <p class="center branco">
+            Meu objetivo com este site é aprender o básico de estruturas em html, para então avançar meus conhecimentos no desenvolvimento front end.
+        </p>
 
     <h2>Contato</h2>
     <div class="container2">
@@ -41,12 +43,12 @@
         <form>
         
             <label for="nome">Nome:</label> <br>
-            <input type="text" id="nome">
-            <br>
+            <input type="text" id="nome" onkeyup="validarNome()">
+            <div id="avisoNome"></div>
             <br>
             <label for="email">Email:</label> <br>
-            <input type="email" id="email">
-            <br>
+            <input type="email" id="email" onkeyup="validarEmail()">
+            <div id="avisoEmail"></div>
             <br>
             <label for="assunto">Assunto:</label> <br>
             <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea>
@@ -77,7 +79,7 @@
     
     <hr>
 
-    <footer>
+    <footer class="branco">
         <div class="center">Icons made by 
             <a href="https://www.freepik.com" title="Freepik">Freepik
             </a> from 
@@ -92,6 +94,9 @@
             </a>
         </div>
     </footer>
+
+
+    <script src="/assets/js/script.js"></script>
 
 </body>
 </html>

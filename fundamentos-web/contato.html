@@ -9,13 +9,13 @@
 <body>
     <div id="menu-principal" class="navegar-lateral">
         <a href="javascript:void(0)" class="fechar-btn" onclick="closeNav()">&times;</a>
-        <a href="index.html">Home</a>
-        <a href="contato.html">Contato</a>
+        <a href="index.html">[HOME]</a>
+        <a href="contato.html">[CONTATO]</a>
     </div>
 
     <span class="botao-menu" onclick="openNav()">&#9776;Menu</span>
 
-    <h1>Sobre mim</h1>
+    <h1>[SOBRE MIM]</h1>
 
         <p class="center branco">
             Olá, me chamo Igor. Tenho 27 anos e estou me tornando Desenvolvedor Full Stack (no momento que estou escrevendo ainda estou estudando).
@@ -25,20 +25,18 @@
             Meu objetivo com este site é aprender o básico de estruturas em html, para então avançar meus conhecimentos no desenvolvimento front end.
         </p>
 
-    <h2>Contato</h2>
+    <h2>[CONTATO]</h2>
     <div class="container2">
-        <ol id="menu-contato">
-            <li>
-                <a href="https://github.com/IgorPV/" target="_blank">
-                    <img class="img-link" src="assets/img/github.png" alt="Logo github">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/igor-pereira-vieira-38a264150/" target="_blank">
-                    <img class="img-link" src="assets/img/linkedin.png" alt="Logo linkedin">
-                </a>
-            </li>
-        </ol>
+        <div id="menu-contato">
+            <a href="https://github.com/IgorPV/" target="_blank">
+                <img class="img-link" src="assets/img/github.png" alt="Logo github">
+            </a>
+            <br>
+            <a href="https://www.linkedin.com/in/igor-pereira-vieira-38a264150/" target="_blank">
+                <img class="img-link" src="assets/img/linkedin.png" alt="Logo linkedin">
+            </a>
+           
+        </div>
 
         <form>
         
@@ -51,14 +49,15 @@
             <div id="avisoEmail"></div>
             <br>
             <label for="assunto">Assunto:</label> <br>
-            <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea>
+            <textarea name="assunto" id="assunto" cols="60" rows="10" onkeyup="validarAssunto()"></textarea>
+            <div id="avisoAssunto"></div>
             <br>
-            <button>Enviar</button>
+            <button onclick="enviar()">Enviar</button>
         </form>
         
     </div>
 
-    <h2>Endereço do Palco das Conquistas:</h2>
+    <h2>[O PALCO DAS CONQUISTAS]</h2>
 
     <div class="container2"> 
         <div>
@@ -69,11 +68,11 @@
         <div>
             <iframe  
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2585.264430468823!2d-46.721867229563806!3d-23.600171694400665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce56c31b1fe649%3A0x7d134f4dfc6618c2!2sEst%C3%A1dio%20C%C3%ADcero%20Pompeu%20de%20Toledo!5e0!3m2!1spt-BR!2sbr!4v1618589540974!5m2!1spt-BR!2sbr" 
-            width="600" 
-            height="450" 
+            width="400" 
+            height="250" 
             style="border:0;" 
             allowfullscreen="" 
-            loading="lazy"></iframe>
+            loading="lazy" class="mapsGoogle" onmousemove="mapaZoom()" onmouseout="mapaNormal()"></iframe>
         </div>
     </div>
     

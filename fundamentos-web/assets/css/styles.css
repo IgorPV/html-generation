@@ -73,6 +73,7 @@ h1,h2{
     text-align: center;
     background-color:#111;
     color: white;
+    font-size: 60px;
 }
 
 .center{
@@ -169,7 +170,7 @@ h1,h2{
 /*Estilos para contato.html*/
 
 #menu-contato li{
-    display: inline;
+    
     text-align: center;
     padding: 20px;
 }

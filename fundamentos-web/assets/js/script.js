@@ -26,14 +26,12 @@ function validarEmail(){
     }
 }
 
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+
 function openNav() {
     document.querySelector("#menu-principal").style.width = "250px";
-    document.getElementById("principal").style.marginLeft = "250px";
 }
   
-  /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+
 function closeNav() {
     document.querySelector("#menu-principal").style.width = "0";
-  
 }

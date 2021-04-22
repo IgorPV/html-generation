@@ -1,0 +1,23 @@
+.jumbotron, .card{
+    font-family: 'Share Tech Mono', monospace;
+    color: white;
+}
+
+h2, h3{
+    font-family: 'Share Tech Mono', monospace;
+    color: black;
+}
+
+.nav-item:hover{
+    color: gray;
+    
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer img:hover{
+    opacity:0.5;
+    
+}

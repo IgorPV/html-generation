@@ -37,7 +37,7 @@ function validarEmail(){
 function validarAssunto(){
     let avisoAssunto = document.querySelector("#avisoAssunto")
     if(assunto.value.length>240){
-        avisoAssunto.innerHTML = "Texto muito grande. Digite no máx 100 caracteres"
+        avisoAssunto.innerHTML = "Texto muito grande. Digite no máx 240 caracteres"
         avisoAssunto.style.color = "red"
         avisoAssunto.style.display = "block"
     } else{

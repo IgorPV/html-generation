@@ -9,18 +9,17 @@
       nav{
         font-family: 'Share Tech Mono', monospace;
       }
-
     </style>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="/landingPage/assets/css/styles.css">
     <title>Mass Effect</title>
   </head>
-  <body>
+  <body class="bg-light">
     
-
+    
     <!--Menu-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-dark cor-menu">
       <a class="navbar-brand text-white" href="index.html">MASS EFFECT</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
         <span class="navbar-toggler-icon"></span>
@@ -55,7 +54,7 @@
       </div>
     </nav>
     <!--/Menu-->
-
+    <div id="home"></div>
     <!--Carrousel-->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -97,37 +96,51 @@
       </div>
     </div>
     <!--/Jumbotron-->
-
+    <div id="Personagens"></div>
     <br>
     <br>
+    <br>
 
-    <div class="container justify-content-center">
-    <h2 id="Personagens">Personagens</h2>
+    <div class="container d-flex justify-content-start ms-3">
+        <h2>Personagens</h2>
+        <a href="#home"><img src="/landingPage/assets/img/up-arrow.png" alt=""></a>
     </div>
     <!--Cards-->
     <div class="row container-flex d-flex p-30 bg-light justify-content-center  mt-3 mb-3">
       <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="/landingPage/assets/img/Default_Shepards.jpg" alt="Imagem de capa do card">
         <div class="card-body bg-secondary">
-          <p class="card-text">Comandante Shepard</p>
+          <p class="card-text nome-p">Comandante Shepard</p>
+          <div class="overlay">
+            <p class="card-text text-justify ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni voluptas inventore veniam aut veritatis sint tenetur minima praesentium maxime</p>
+          </div>
         </div>
       </div>
       <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="/landingPage/assets/img/garrus.jpg" alt="Imagem de capa do card">
         <div class="card-body bg-secondary">
-          <p class="card-text">Garrus Vakarian</p>
+          <p class="card-text nome-p">Garrus Vakarian</p>
+          <div class="overlay">
+            <p class="card-text text-justify ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni voluptas inventore veniam aut veritatis sint tenetur minima praesentium maxime</p>
+          </div>
         </div>
       </div>
       <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="/landingPage/assets/img/WrexOnNoveria.png" alt="Imagem de capa do card">
         <div class="card-body bg-secondary">
-          <p class="card-text">Urdnot Wrex</p>
+          <p class="card-text nome-p">Urdnot Wrex</p>
+          <div class="overlay">
+            <p class="card-text text-justify ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni voluptas inventore veniam aut veritatis sint tenetur minima praesentium maxime</p>
+          </div>
         </div>
       </div>
       <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="/landingPage/assets/img/tali.jpg" alt="Imagem de capa do card">
         <div class="card-body bg-secondary">
-          <p class="card-text">Tali'Zorah vas Neema/Normandy</p>
+          <p class="card-text nome-p">Tali'Zorah vas Neema/Normandy</p>
+          <div class="overlay">
+            <p class="card-text text-justify ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni voluptas inventore veniam aut veritatis sint tenetur minima praesentium maxime</p>
+          </div>
         </div>
       </div>
 
@@ -137,35 +150,49 @@
       <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="/landingPage/assets/img/liara.jpg" alt="Imagem de capa do card">
         <div class="card-body bg-secondary">
-          <p class="card-text">Dra Liara T'Soni</p>
+          <p class="card-text nome-p">Dra Liara T'Soni</p>
+          <div class="overlay">
+            <p class="card-text text-justify ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni voluptas inventore veniam aut veritatis sint tenetur minima praesentium maxime</p>
+          </div>
         </div>
       </div>
       <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="/landingPage/assets/img/thane.jpg" alt="Imagem de capa do card">
         <div class="card-body bg-secondary">
-          <p class="card-text">Thane Krios</p>
+          <p class="card-text nome-p">Thane Krios</p>
+          <div class="overlay">
+            <p class="card-text text-justify ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni voluptas inventore veniam aut veritatis sint tenetur minima praesentium maxime</p>
+          </div>
         </div>
       </div>
       <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="/landingPage/assets/img/normandy.png" alt="Imagem de capa do card">
         <div class="card-body bg-secondary">
-          <p class="card-text">Normandy</p>
+          <p class="card-text nome-p">Normandy</p>
+          <div class="overlay">
+            <p class="card-text text-justify ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni voluptas inventore veniam aut veritatis sint tenetur minima praesentium maxime</p>
+          </div>
         </div>
       </div>
       <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="/landingPage/assets/img/Mass-Effect-Reapers.jpg" alt="Imagem de capa do card">
         <div class="card-body bg-secondary">
-          <p class="card-text">Reapers</p>
+          <p class="card-text nome-p">Reapers</p>
+          <div class="overlay">
+            <p class="card-text text-justify ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni voluptas inventore veniam aut veritatis sint tenetur minima praesentium maxime</p>
+          </div>
         </div>
       </div>
     </div>
     <!--/Cards-->
-    
+    <div id="Lugares"></div>
+    <br>
     <br>
     <br>
       <!--Midia-->
-    <div class="container justify-content-center">
-      <h2 id="Lugares">Lugares</h2>
+    <div class="container d-flex justify-content-start ms-3">
+      <h2>Lugares</h2>
+      <a href="#home"><img src="/landingPage/assets/img/up-arrow.png" alt=""></a>
     </div>
     
     <div class="row container-fluid justify-content-center align-items-center p-30 d-flex text-justify">
@@ -206,16 +233,17 @@
 
   
     <!--/Midia-->
-
+    <div id="Contato"></div>
     <br>
     <br>
     <br>  
 
     <!--Form-->
-    <div class="container"><h2 id="Contato">Contato</h2></div>
+    <div class="container d-flex justify-content-start ms-3">
+      <h2>Contato</h2>
+      <a href="#home"><img src="/landingPage/assets/img/up-arrow.png" alt=""></a>
+    </div>
 
-    <br>
-    <br>
     <div class="row container-flex justify-content-center text-center">
       
       <div class="col-md-8 mt-3 mb-3"><h3>Assine nossa newsletter!</h3></div>
@@ -280,9 +308,9 @@
     <!--Footer-->
     <hr class="bg-light">
     <footer>
-      <div class="row container-flex d-flex bg-light justify-content-center">
+      <div class="row container-flex d-flex bg-light justify-content-center text-center">
 
-        <div class="col-md-3">
+        <div class="col-md-2">
           <a href="https://github.com/IgorPV" target="_blank">
             <img src="/landingPage/assets/img/github.png" alt="GitHub">
           </a>
@@ -292,8 +320,8 @@
         
         </div>
 
-        <div class="col-md-2">
-          <p> Igor Pereira Vieira &copy;</p>
+        <div class="col-md-4">
+          <p>Criado por: Igor Pereira Vieira &copy;</p>
         </div>
 
       </div>

@@ -1,0 +1,12 @@
+.fs-16{
+    font-size: 16pt;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+fa-icon:hover{
+    opacity: 0.5;
+    transition: 1s ease;
+}

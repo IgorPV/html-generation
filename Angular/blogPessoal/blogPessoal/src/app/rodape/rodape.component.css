@@ -1,0 +1,21 @@
+.redes-sociais{
+    list-style: none;
+    padding: 0;
+}
+
+.redes-sociais li{
+    display: inline;
+    margin: 0;
+    padding: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.redes-sociais li:hover{
+    opacity: 0.5;
+    transition: 1s ease;
+}
+
+.fab{
+    font-size: 35pt;
+}

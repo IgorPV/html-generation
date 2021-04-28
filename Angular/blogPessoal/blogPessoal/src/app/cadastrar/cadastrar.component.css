@@ -3,4 +3,8 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    min-height: 746px;
+    min-width: auto;
 }

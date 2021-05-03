@@ -1,4 +1,3 @@
-
 <div class="container-fluid" id="fundo"> 
     <div class="row d-flex align-items-center">
 
@@ -38,18 +37,10 @@
                         placeholder="Entre com uma senha">
                     </div>
 
-                    <div class="form-group">
-                        <label for="tipo">Tipo de Usuário</label>
-                        <select class="form-control" name="tipo" id="tipo" (change)='tipoUser($event)'>
-                            <option>Selecione um tip de usuário:</option>
-                            <option value="normal">Padrão</option>
-                            <option value="adm">Admin</option>
-                        </select>
-                    </div>
 
                     <div class="d-flex justify-content-center mb-5 mt-5">
                         <button class="btn btn-danger mr-4" routerLink='/entrar'>Cancelar</button>
-                        <button class="btn btn-success" (click)='cadastrar()'>Cadastrar</button>
+                        <button class="btn btn-success" (click)='editarUser()'>Editar</button>
                     </div>
                    
                 </div>

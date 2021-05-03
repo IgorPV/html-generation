@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { faUserEdit, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
+import { environment } from 'src/environments/environment.prod';
 
 @Component({
   selector: 'app-menu',
@@ -8,11 +10,25 @@ import { faUserEdit, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  nome = environment.nome
+  foto = environment.foto
 
-  ngOnInit(): void {
+  constructor(
+    private router: Router
+  ) { }
+
+  ngOnInit(){
   }
 
   faUserEdit = faUserEdit;
   faSignOutAlt = faSignOutAlt;
+
+  sair(){
+    this.router.navigate(['/entrar'])
+    environment.token = ''
+    environment.nome = ''
+    environment.id = 0
+    environment.foto = ''
+  }
+
 }

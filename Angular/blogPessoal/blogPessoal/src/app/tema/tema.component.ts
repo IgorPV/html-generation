@@ -12,12 +12,12 @@ import { TemaService } from '../service/tema.service';
 })
 export class TemaComponent implements OnInit {
 
-  tema: Temas
+  tema: Temas = new Temas()
   listaTemas: Temas[]
 
   constructor(
     private router: Router,
-    private temaService: TemaService,
+    private temaService: TemaService
 
   ) { }
 

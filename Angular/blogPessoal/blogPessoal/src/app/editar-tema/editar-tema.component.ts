@@ -11,7 +11,7 @@ import { TemaService } from '../service/tema.service';
 })
 export class EditarTemaComponent implements OnInit {
 
-  tema: Temas = new Temas
+  tema: Temas = new Temas()
 
   constructor(
     private router: Router,

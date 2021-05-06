@@ -16,7 +16,7 @@ const routes: Routes = [
   {path:'tema', component: TemaComponent},
   {path:'editar-user', component: EditarUserComponent},
   {path:'editar-tema/:id', component: EditarTemaComponent},
-  {path: 'tema-delete/:id', component: TemaDeleteComponent}
+  {path:'tema-delete/:id', component: TemaDeleteComponent}
 ];
 
 @NgModule({

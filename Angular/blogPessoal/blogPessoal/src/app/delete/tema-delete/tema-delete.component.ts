@@ -1,21 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Temas } from 'src/app/model/Temas';
+import { TemaService } from 'src/app/service/tema.service';
 import { environment } from 'src/environments/environment.prod';
-import { Temas } from '../model/Temas';
-import { TemaService } from '../service/tema.service';
 
 @Component({
-  selector: 'app-editar-tema',
-  templateUrl: './editar-tema.component.html',
-  styleUrls: ['./editar-tema.component.css']
+  selector: 'app-tema-delete',
+  templateUrl: './tema-delete.component.html',
+  styleUrls: ['./tema-delete.component.css']
 })
-export class EditarTemaComponent implements OnInit {
+export class TemaDeleteComponent implements OnInit {
 
-  tema: Temas = new Temas
+  tema: Temas = new Temas()
+  idTema: number
 
   constructor(
-    private router: Router,
     private temaService: TemaService,
+    private router: Router,
     private route: ActivatedRoute
   ) { }
 
@@ -25,21 +26,21 @@ export class EditarTemaComponent implements OnInit {
       this.router.navigate(['/entrar'])
     }
 
-    let id = this.route.snapshot.params['id']
-    this.findByIdTema(id)
+    this.idTema = this.route.snapshot.params['id']
+    this.findByIdTema(this.idTema)
   }
 
   findByIdTema(id: number){
     this.temaService.getByIdTema(id).subscribe((resp: Temas)=>{
       this.tema = resp
-    })  
+    })
   }
 
-  atualizar(){
-    this.temaService.putTema(this.tema).subscribe((resp: Temas)=>{
-      this.tema = resp
-      alert('Tema Atualizado com Sucesso!')
+  apagar(){
+    this.temaService.deleteTema(this.idTema).subscribe(()=>{
+      alert('Tema deletado com sucesso!')
       this.router.navigate(['/tema'])
     })
   }
+
 }

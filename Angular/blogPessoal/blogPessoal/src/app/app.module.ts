@@ -15,6 +15,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { TemaComponent } from './tema/tema.component';
 import { EditarUserComponent } from './editar-user/editar-user.component';
 import { EditarTemaComponent } from './editar-tema/editar-tema.component';
+import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { EditarTemaComponent } from './editar-tema/editar-tema.component';
     InicioComponent,
     TemaComponent,
     EditarUserComponent,
-    EditarTemaComponent
+    EditarTemaComponent,
+    TemaDeleteComponent
   ],
   imports: [
     BrowserModule,

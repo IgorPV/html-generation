@@ -16,6 +16,8 @@ import { TemaComponent } from './tema/tema.component';
 import { EditarUserComponent } from './editar-user/editar-user.component';
 import { EditarTemaComponent } from './editar-tema/editar-tema.component';
 import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component';
+import { EditarPostComponent } from './editar-post/editar-post.component';
+import { PostDeleteComponent } from './delete/post-delete/post-delete.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component'
     TemaComponent,
     EditarUserComponent,
     EditarTemaComponent,
-    TemaDeleteComponent
+    TemaDeleteComponent,
+    EditarPostComponent,
+    PostDeleteComponent
   ],
   imports: [
     BrowserModule,
